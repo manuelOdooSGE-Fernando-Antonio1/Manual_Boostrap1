@@ -16,7 +16,9 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+  
+  <!-- particles CSS 
+  <link rel="stylesheet" href="assets/vendor/particles/css/style.css"> -->
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,8 +26,11 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!--  -->
   <link rel="stylesheet" href="assets/css/micss.css">
 
  
@@ -45,19 +50,37 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Inicio<br></a></li>
-          <li><a href="manual.html">Manual</a></li>
-          <li class="dropdown"><a href="odoo.html" ><span>Odoo</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="odoo.html"><span>Manual</span> 
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="manual.html#m1">1 Plantilla de Bootstrap</a></li>
+              <li><a href="manual.html#m2">2 Creamos el daily</a></li>
+              <li><a href="manual.html#m3">3 Manual Odoo Dropdown</a></li>
+
+              <li><a href="manual.html#m4">4 Animación Particulas</a></li>
+              <li><a href="manual.html#m5">5 Swiper Carrouseles</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="odoo.html"><span>Odoo</span> 
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="odoo.html#modulo1a">1.A. Modulo Empleados</a></li>
               <li><a href="odoo.html#modulo1b">1.B. Crear Nuevo Empleado</a></li>
               <li><a href="odoo.html#modulo1c">1.C. jerarquía, Organigrama</a></li>
 
-              <li><a href="odoo.html#modulo2a">2.A Crear Productos</a></li>
+              <li><a href="odoo.html#modulo2a">2.A Modulo Ventas Productos</a></li>
+              <li><a href="odoo.html#modulo2b">2.B Formulario Nuevo producto</a></li>
+              <li><a href="odoo.html#modulo2c">2.C Gestion de Productos</a></li>
 
-              <li><a href="odoo.html#modulo2a">2.A Realizar Pedidos</a></li>
-              <li><a href="odoo.html">2.A Solicitud de Presupuesto</a></li>
-              <li><a href="odoo.html">Travel</a></li>
+              <li><a href="odoo.html#modulo3a">3.A Modulo Compra</a></li>
+              <li><a href="odoo.html#modulo3b">3.B Solicitud de Presupuesto</a></li>
+              <li><a href="odoo.html#modulo3c">3.C Pedido Compra</a></li>
+
+              <li><a href="odoo.html#modulo4a">4.A Elaboración Logotipo</a></li>
+
+              <li><a href="odoo.html#modulo5a">5.A Modulo Ventas</a></li>
+              <li><a href="odoo.html#modulo5b">5.B Salon TPV ticket </a></li>
             </ul>
           </li>
           <li><a href="daily.html">Daily</a></li>
@@ -76,12 +99,13 @@
     </div>
   </header>
 
-  <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
+    <section id="hero" class="hero section" style="position: relative;" >
+      <main id="particles-js" class="particulas" >
 
-      <div class="container">
+     
+      <div class="container"  >
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
             <h1 style=" font-size: 6em">Manual</h1>
@@ -92,10 +116,11 @@
             
           </div>
         </div>
-      </div>
+
+      </main>
 
     </section><!-- /Hero Section -->
-
+  </div>
     
 
   <footer id="footer" class="footer">
@@ -129,6 +154,8 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/particles/particles.js"></script>
+  <script src="assets/vendor/particles/js/app.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

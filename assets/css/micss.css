@@ -25,3 +25,50 @@
     padding: 3px; border-radius: 5px;
 
 }
+
+h3{
+    font-size: 1.8em;
+}
+
+/* particles */
+.particulas {
+    position: relative;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.particles-js-canvas-el {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+}
+
+
+/* swiper Odoo  */
+.tituloNuevo{
+    margin: 10px 0px 10px 0px;
+}
+
+.imgSwiper{
+    width: 70%;
+}
+
+.imgSwiper2{
+    width: 100%;
+}
+
+:root {
+    --swiper-theme-color:var(--accent-color);
+}
+
+@media screen and (max-width: 800px){
+
+    .imgSwiper{
+        width: 100%;
+    }
+
+
+}

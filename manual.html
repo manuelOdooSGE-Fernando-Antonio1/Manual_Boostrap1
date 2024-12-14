@@ -15,7 +15,18 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Cardo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- particles CSS -->
+  <link rel="stylesheet" href="assets/vendor/particles/css/style.css">
+
+    <!-- swiper -->
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- particles CSS -->
+  <link rel="stylesheet" href="assets/vendor/particles/css/style.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +34,9 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -43,9 +57,22 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio<br></a></li>
-          <li><a href="manual.html" class="active">Manual</a></li>
-          <li class="dropdown"><a href="odoo.html" ><span>Odoo</span> 
+
+          <li class="dropdown"><a href="odoo.html" class="active"><span>Manual</span> 
             <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="manual.html#m1">1 Plantilla de Bootstrap</a></li>
+              <li><a href="manual.html#m2">2 Creamos el daily</a></li>
+              <li><a href="manual.html#m3">3 Manual Odoo Dropdown</a></li>
+
+              <li><a href="manual.html#m4">4 Animación Particulas</a></li>
+              <li><a href="manual.html#m5">5 Swiper Carrouseles</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="odoo.html"><span>Odoo</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="odoo.html#modulo1a">1.A. Modulo Empleados</a></li>
               <li><a href="odoo.html#modulo1b">1.B. Crear Nuevo Empleado</a></li>
@@ -88,102 +115,214 @@
             <div class="col-lg-8">
               <h1>Manual de Bootstrap</h1>
               <p class="mb-0">Instalacion y modificaciones de la Plantilla </p>
-              
+
             </div>
           </div>
         </div>
       </div>
-   
-    <!-- About Section -->
-    <section id="about" class="about section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <!-- About Section -->
+      <section id="about" class="about section">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-9">
-            <img src="assets/img/imagenesBootstrap/bootstrap-image-MSA-Technosoft-1536x864.jpg" class="img-fluid" alt="">
-          </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-7 content">
-            <h2> Eleccion e instalacion de la plantilla de Bootstrap</h2>
-            <p class="fst-italic">
-              Buscamos una Plantilla que nos interese.</p>
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-9">
+              <img src="assets/img/imagenesBootstrap/bootstrap-image-MSA-Technosoft-1536x864.jpg" class="img-fluid"
+                alt="">
+            </div>
+
+            <div class="col-lg-7 content" id="m1">
+              <h2> Eleccion e instalacion de la plantilla de Bootstrap</h2>
+              <p class="fst-italic">
+                Buscamos una Plantilla que nos interese.</p>
               <p class="fst-italic">Nosotros escogimos la siguiente de la pagina bootstrapmade.com</p>
-              
-            <div class="row">
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <a
+                        href="https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/">Photomade.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="col-lg-12">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <a href="https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/">Photomade.com</a></li>
-                </ul>
+                <img src="assets/img/imagenesBootstrap/fotoPlantillaWeb.png" class="img-fluid" alt="">
+              </div>
+              <p class="py-3"> Hemos decidido escoger esta plantilla ya que no es una plantilla tipo landing y esta muy
+                bien organizada. ademas de que era gratuita,abierta y con increibles animaciones</p>
+
+            </div>
+
+            <!--Modificar las imagenes y el texto e ir duplicando el bloque entero-->
+            <div class="col-lg-7 content">
+              <h2> Descargamos la plantilla</h2>
+              <p class="fst-italic">
+                Abrimos la plantilla con visual studio code</p>
+              <p class="fst-italic">Empezamos a retocar el menu de navegacion y modificando las paginas</p>
+              <p class="fst--italic">Tambien eliminamos/modificamos las diferentes imagenes hay por las plantillas</p>
+
+              <h3>Antes</h3>
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/Cambios inicio (2).png" class="img-fluid" alt="">
+              </div>
+              <br />
+              <h3>Después</h3>
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/Cambios inicio (1).png" class="img-fluid" alt="">
+              </div>
+              <p class="py-3">De esta forma obtenemos un inicio personalizado</p>
+
+            </div>
+            <!--Hasta aquí-->
+            <div class="col-lg-7 content"  id="m2">
+              <h2> Creamos el daily</h2>
+              <p class="fst-italic">
+                Abrimos daily.html con visual studio code</p>
+              <p class="fst-italic">Insertamos una tabla con estilos "table table-success table-striped-columns">" </p>
+              <p class="fst--italic">Ponemos los nombres de las columnas "Fecha","Tarea","Respònsable","Estado de la
+                Tarea"</p>
+              <p class="fst--italic">Para el subrayado del texto insertamos un span donde le asignaremos una clase cuyo
+                color se recoge en el css "micss.css"</p>
+
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/Daily.png" class="img-fluid" alt="">
+              </div>
+              <br />
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/TablaHTML.png" class="img-fluid" alt="">
               </div>
             </div>
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/fotoPlantillaWeb.png" class="img-fluid" alt="">
-            </div>
-            <p class="py-3"> Hemos decidido escoger esta plantilla ya que no es una plantilla tipo landing y esta muy bien organizada. ademas de que era gratuita,abierta y con increibles animaciones</p>
 
-          </div>
-
-          <!--Modificar las imagenes y el texto e ir duplicando el bloque entero-->
-          <div class="col-lg-7 content">
-            <h2> Descargamos la plantilla</h2>
-            <p class="fst-italic">
-              Abrimos la plantilla con visual studio code</p>
+            <div class="col-lg-7 content"  id="m3">
+              <h2> Manual Odoo Dropdown</h2>
+              <p class="fst-italic">
+                en la zona de navegacion</p>
               <p class="fst-italic">Empezamos a retocar el menu de navegacion y modificando las paginas</p>
               <p class="fst--italic">Tambien eliminamos/modificamos las diferentes imagenes hay por las plantillas</p>
-        
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/Cambios inicio (2).png" class="img-fluid" alt="">
-            </div>
-            <br/>
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/Cambios inicio (1).png" class="img-fluid" alt="">
-            </div>
-            <p class="py-3">De esta forma obtenemos un inicio personalizado</p>
 
-          </div>
-          <!--Hasta aquí-->
-          <div class="col-lg-7 content">
-            <h2> Creamos el daily</h2>
-            <p class="fst-italic">
-              Abrimos daily.html con visual studio code</p>
-              <p class="fst-italic">Insertamos una tabla  con estilos "table table-success table-striped-columns">" </p>
-              <p class="fst--italic">Ponemos los nombres de las columnas "Fecha","Tarea","Respònsable","Estado de la Tarea"</p>
-              <p class="fst--italic">Para el subrayado del texto insertamos un span donde le asignaremos una clase cuyo color se recoge en el css "micss.css"</p>
-        
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/Daily.png" class="img-fluid" alt="">
-            </div>
-            <p class="py-3"> Hemos decidido escoger esta plantilla ya que no es una plantilla tipo landing y esta muy bien organizada. ademas de que era gratuita,abierta y con increibles animaciones</p>
+              <h3>Antes/Después</h3>
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/DropdownsHTML.png" class="img-fluid" alt="">
+              </div>
+              <br />
+              <h3>Después/Antes</h3>
+              <div class="col-lg-12">
+                <img src="assets/img/imagenesBootstrap/DropdownsWeb.png" class="img-fluid" alt="">
+              </div>
 
-          </div>
+            </div>
 
-          <div class="col-lg-7 content">
-            <h2> Manual Odoo Dropdown</h2>
-            <p class="fst-italic">
-              en la zona de navegacion</p>
-              <p class="fst-italic">Empezamos a retocar el menu de navegacion y modificando las paginas</p>
-              <p class="fst--italic">Tambien eliminamos/modificamos las diferentes imagenes hay por las plantillas</p>
-        
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/Cambios inicio (2).png" class="img-fluid" alt="">
+            <div class="col-lg-7 content mt-5">
+              <section style="position: relative; height: 40vh; background-color:rgb(12, 90, 55)"  id="m4">
+                <div id="particles-js" style="text-align: center;">
+                  <h2>Nueva Portadada con animación de Particulas</h2>
+                </div>
+              </section>
+              <br>
+              <p class="fst-italic" style="text-align: justify;">Se ha agregado una animacion de particulas que
+                funcionan con Javascript <br>
+                la página para descargarlo es esta <a target="_blank"
+                  href="https://vincentgarreau.com/particles.js/">enlace</a>
+                para implementarlo hay que descargar su carpeta la guardas en assets/vendor/particles y ahi guardas lo
+                necesario para esta librería
+                luego para implementarla hay que configurar en la pagina los valores de velocidad o diseño del patron te
+                descargas el archivo Json
+                y lo implementas en el archivo app.js, seguido de esto debes colocar en un contenedor el id="particles
+                que sera donde se creara una etiqueta canvas
+                donde se crearan las particulas, ahora seguido de esto hay que modificar el css para que se pongho de
+                fondo con un position absolute
+                y uno que otro css más el cual comprato a continuación, esto lo se porque me gusta mucho experimientar
+                con css y js
+              </p>
+
+
+              <div class="col-lg-12">
+                <h3>Antes/Después</h3>
+                <img src="assets/img/imagenesBootstrap/particulasportada.jpg" class="img-fluid" alt="particulasportda">
+              </div>
+              <br />
+              <h3>Css Particulas</h3>
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="assets/img/imagenesBootstrap/cssparticulas.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8">
+                  <img src="assets/img/imagenesBootstrap/particleshtml.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+
             </div>
-            <br/>
-            <div class="col-lg-12">
-              <img src="assets/img/imagenesBootstrap/Cambios inicio (1).png" class="img-fluid" alt="">
+
+            <div class="col-lg-7 content mt-5"  id="m5">
+
+              <h2>Swiper Js Carrousel</h2>
+              <p class="fst-italic" style="text-align: justify;">Se ha agregado una animacion de particulas que
+                funcionan con Javascript <br>
+                la página para descargarlo es esta <a target="_blank"
+                  href="https://vincentgarreau.com/particles.js/">enlace</a>
+                La plantilla ya traia el swiper implementado pero nosotros hemos configurado nuestro swiper a gusto es el basico donde
+                se le ha puesto el color de las flechas verdes que van con nuestra plantilla se ha configurado un autopasado cada 2500 milisegundos y si te pones sobre 
+                la foto se detiene se puede hacer lo quieras solo es cosa de mirar la documentacion aqui el <a target="_blank" href="https://swiperjs.com/">enlace</a>
+                ademas de implementar el css y el js hay que inicializarlo el js lo hemos llamado swiperInicia.js.
+              </p>
+
+              <div class="col-lg-12">
+
+                <div class="col-lg-12" style="align-items: center; display: flex;">
+                  
+                  <!-- SWIPER -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper2" src="assets/img/productos/productosventas.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper2" src="assets/img/productos/cuyasado.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper2" src="assets/img/ventas/planomesastpv.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper2" src="assets/img/ventas/haciendopedido.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper2" src="assets/img/ventas/ticketcompra.jpg">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+              </div>
+              <br />
+              <h3>Implementación</h3>
+              <div class="row">
+                <div class="col-lg-12">
+                  <img src="assets/img/imagenesBootstrap/swiperOdoo.jpg" class="img-fluid" alt="">
+                </div>
+
+
+              </div>
+
             </div>
-            <p class="py-3">De esta forma obtenemos un inicio personalizado</p>
+
+
           </div>
         </div>
-      </div>
-    </section><!-- /About Section -->
+      </section><!-- /About Section -->
   </main>
+
+
 
   <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Manual Boostrap/Odoo F.A.</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Manual Boostrap/Odoo F.A.</strong> <span>All Rights
+            Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -196,19 +335,27 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader 
   <div id="preloader">
     <div class="line"></div>
   </div> -->
 
+  <!-- Initialize Swiper -->
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/swiperInicia.js"></script>
+  
+  <script src="assets/vendor/particles/particles.js"></script>
+  <script src="assets/vendor/particles/js/app.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

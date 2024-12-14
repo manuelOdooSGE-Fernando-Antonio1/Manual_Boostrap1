@@ -35,6 +35,8 @@
 
 <body class="gallery-page">
 
+
+
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -48,7 +50,18 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio<br></a></li>
-          <li><a href="manual.html">Manual</a></li>
+          <li class="dropdown"><a href="odoo.html"><span>Manual</span> 
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="manual">1 Plantilla de Bootstrap</a></li>
+              <li><a href="manual.html#m2">2 Creamos el daily</a></li>
+              <li><a href="manual.html#m3">3 Manual Odoo Dropdown</a></li>
+
+              <li><a href="manual.html#m4">4 Animación Particulas</a></li>
+              <li><a href="manual.html#m5">5 Swiper Carrouseles</a></li>
+
+            </ul>
+          </li>
           <li class="dropdown"><a href="odoo.html" class="active"><span>Odoo</span> 
             <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -65,6 +78,10 @@
               <li><a href="odoo.html#modulo3c">3.C Pedido Compra</a></li>
 
               <li><a href="odoo.html#modulo4a">4.A Elaboración Logotipo</a></li>
+
+              <li><a href="odoo.html#modulo5a">5.A Modulo Ventas</a></li>
+              <li><a href="odoo.html#modulo5b">5.B Salon TPV ticket </a></li>
+              
 
             </ul>
           </li>
@@ -91,42 +108,34 @@
         <div class="container-fluid">
 
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+            <div class="col-sm-12 col-lg-8">
               <h1>Odoo</h1>
 
               <h2 id="modulo1a" class="underlight textoTitulo">1.A. Modulo Empleados</h2>
               <hr>
 
               <div class="row">
-                <div class="col-sm-12 col-lg-6" style="align-items: center; display: flex;">
-
-                  <div id="carouselExample" class="carousel slide" data-bs-ride="true">
-
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/img/Imagenes1/emples.jpg" class="d-block w-100" alt="...">
+                <div class="col-lg-12" style="align-items: center; display: flex;">
+                  
+                  <!-- SWIPER -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/Imagenes1/emples.jpg">
                       </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/Imagenes1/emples2.jpg" class="d-block w-100" alt="...">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/Imagenes1/emples2.jpg">
                       </div>
+                     
                     </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                      data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="" style="color:magenta; font-size:2em">
-                        < </span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                      data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="" style="color:magenta; font-size:2em">></span>
-                    </button>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                   </div>
+                 
 
                 </div>
-                <div class="col-sm-12 col-lg-6">
-                  <h2 id="modulo1b" class="underlight textoizq">A Modulo Empleados</h2>
+                <div class="col-lg-12">
+                  <h2 id="modulo1b" class="underlight textoizq tituloNuevo">A Modulo Empleados</h2>
                   <p class="textoizq">
                     El módulo de empleados de Odoo es una herramienta poderosa que facilita la gestión centralizada del
                     personal de una empresa. Permite registrar y administrar información detallada de los empleados,
@@ -362,14 +371,99 @@
 
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
 
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container-fluid">
+
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-sm-12 col-lg-8">
+
+              <h2 id="modulo5a" class="underlight textoTitulo">4.A. Modulo Ventas</h2>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12">
+
+
+                  <div class="col-sm-12">
+                    <img src="assets/img/ventas/puntoventa1.jpg" alt="PuntosVenta" class="anchoImagen">
+                  </div>
+
+                  <div class="col-lg-12">
+                    <h2  class="underlight textoizq tituloNuevo">4.A. Modulo Ventas</h2>
+                    <p class="textoizq">
+                      El módulo de ventas de Odoo es perfecto para manejar los pedidos en un restaurante peruano. 
+                      Imagínate que un cliente pide una mesa y ordena un ceviche y un lomo saltado. 
+                      Primero, entras al módulo de ventas, creas un pedido y anotas lo que el cliente pidió. 
+                      Incluso puedes agregar detalles como si quiere ají extra o qué término de cocción prefiere para el lomo.
+
+                      Cuando llega el momento de pagar, usas el módulo de TPV. Ahí seleccionas el pedido, verificas que todo esté bien, 
+                      y eliges el método de pago. Si el cliente paga en efectivo, registras el monto, das el cambio y listo, ¡todo queda 
+                      registrado en el sistema! Así tienes un control fácil y rápido de tus pedidos y ventas, sin complicaciones. 
+                      ¡Y tu cliente se va feliz con su comida peruana favorita!
+                      <br>
+                      para un detalle mejor se puede ver la documentacion general en este enlace: <a
+                        href="https://www.odoo.com/es_ES/app/sales-features#part_7">Gestión de ordenes y contratos</a>
+                    </p>
+                  </div>
+
+                  <h2 id="modulo5b" class="underlight textoizq">4.B. Imagenes modulo Ventas
+                  </h2>
+                  <p class="textoizq">
+                    Desde el modulo de ventas tienes una conexión directa con el modulo de productos para poder crear editar y volver 
+                    rápidamente al modulo de ventas y completar la venta, en el siguiente carrousel mostramos unas capturas del modulo de ventas donde se puede apreciar
+                    el salon con las mesas, los productos, la pantalla de comnpra del TPV con los productos y simulación de tiquet con precio de compra y finalmente la simulación de una compra realizada con el ticket de compra con el logo del Restaurante.
+                    <br>
+                    El sistemas es super simple hasta parace de chiste, luego de elegir la mesa seleccionas los productos le das a pago, eliges el metodo efectivo, tarjeta registra el ingreso, confirmas y se crea el ticket.
+                  </p>
+                </div>
+        
+              </div>
+              <div class="row">
+                <div class="col-lg-12" style="align-items: center; display: flex;">
+                  
+                  <!-- SWIPER -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/productos/productosventas.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/productos/cuyasado.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/planomesastpv.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/haciendopedido.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/ticketcompra.jpg">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                
+                </div>
+              </div>
+              <br />
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Page Title -->
+
     </div>
-    <!-- FIN MODULO LOGO -->
-
-
+    
   </main>
 
   <footer id="footer" class="footer">
@@ -407,7 +501,12 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script src="assets/js/swiperInicia.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
