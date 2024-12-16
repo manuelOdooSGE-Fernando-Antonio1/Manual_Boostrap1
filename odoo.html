@@ -29,17 +29,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/micss.css">
+  <link rel="stylesheet" href="assets/css/odoo.css">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="gallery-page">
+
+
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
@@ -54,30 +50,42 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio<br></a></li>
-          <li><a href="manual.html">Manual</a></li>
-          <li class="dropdown"><a href="odoo.html" class="active"><span>Odoo</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="manual.html"><span>Manual</span> 
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="odoo.html">Modulo1</a></li>
-              <li><a href="odoo.html">People</a></li>
-              <li><a href="odoo.html">Architecture</a></li>
-              <li><a href="odoo.html">Animals</a></li>
-              <li><a href="odoo.html">Sports</a></li>
-              <li><a href="odoo.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
+              <li><a href="manual.html#m1">1 Plantilla de Bootstrap</a></li>
+              <li><a href="manual.html#m2">2 Creamos el daily</a></li>
+              <li><a href="manual.html#m3">3 Manual Odoo Dropdown</a></li>
+
+              <li><a href="manual.html#m4">4 Animación Particulas</a></li>
+              <li><a href="manual.html#m5">5 Swiper Carrouseles</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="odoo.html" class="active"><span>Odoo</span> 
+            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="odoo.html#modulo1a">1.A. Modulo Empleados</a></li>
+              <li><a href="odoo.html#modulo1b">1.B. Crear Nuevo Empleado</a></li>
+              <li><a href="odoo.html#modulo1c">1.C. jerarquía, Organigrama</a></li>
+
+              <li><a href="odoo.html#modulo2a">2.A Modulo Ventas Productos</a></li>
+              <li><a href="odoo.html#modulo2b">2.B Formulario Nuevo producto</a></li>
+              <li><a href="odoo.html#modulo2c">2.C Gestion de Productos</a></li>
+
+              <li><a href="odoo.html#modulo3a">3.A Modulo Compra</a></li>
+              <li><a href="odoo.html#modulo3b">3.B Solicitud de Presupuesto</a></li>
+              <li><a href="odoo.html#modulo3c">3.C Pedido Compra</a></li>
+
+              <li><a href="odoo.html#modulo4a">4.A Elaboración Logotipo</a></li>
+
+              <li><a href="odoo.html#modulo5a">5.A Modulo Ventas</a></li>
+              <li><a href="odoo.html#modulo5b">5.B Salon TPV ticket </a></li>
+              
+
             </ul>
           </li>
           <li><a href="daily.html">Daily</a></li>
-          <!--  <li><a href="contact.html">Contact</a></li>-->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -94,44 +102,96 @@
 
   <main class="main">
 
-
-    <style>
-      .underlight {
-        color:  var(--accent-color);
-      }
-    </style>
-
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container-fluid">
 
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+            <div class="col-sm-12 col-lg-8">
               <h1>Odoo</h1>
 
+              <h2 id="modulo1a" class="underlight textoTitulo">1.A. Modulo Empleados</h2>
+              <hr>
+
               <div class="row">
+                <div class="col-lg-12" style="align-items: center; display: flex;">
+                  
+                  <!-- SWIPER -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/Imagenes1/emples.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/Imagenes1/emples2.jpg">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                 
 
-                <div class="col-sm-12 col-lg-6">
-                  <img src="assets/img/Imagenes1/formuEmples.png" alt="Formulario_Empleados" style="width: 100%;">
                 </div>
+                <div class="col-lg-12">
+                  <h2 id="modulo1b" class="underlight textoizq tituloNuevo">A Modulo Empleados</h2>
+                  <p class="textoizq">
+                    El módulo de empleados de Odoo es una herramienta poderosa que facilita la gestión centralizada del
+                    personal de una empresa. Permite registrar y administrar información detallada de los empleados,
+                    como datos personales, contratos, documentos y habilidades. Además, se integra de manera fluida con
+                    otros módulos de Odoo, como Nóminas, Ausencias y Gastos, optimizando los procesos relacionados con
+                    el capital humano. Este módulo es ideal para mantener una visión general del equipo, fomentar la
+                    organización y mejorar la eficiencia administrativa.
+                    <br>
+                    La personalización y detalles en opciones es muy flexible, se puede configurar desde quien es tu
+                    superior, mentor hasta los días de vacaciones, detalles como en que proyectos se esta participando,
+                    etc para un detalle mejor se puede ver la documentacion general en este enlace: <a
+                      href="https://www.odoo.com/es_ES/app/employees">Documentación Gestión de Empleados</a>
+                  </p>
+                </div>
+              </div>
 
+              <br />
+
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <h2 id="modulo1c" class="underlight textoizq">B Empleados / formulario <span>nuevo</span> Empleado
+                  </h2>
+                  <p class="textoizq">
+                    Crear un nuevo empleado, Cuando contrata a un nuevo empleado, lo primero que debe hacer es crear un
+                    nuevo registro de empleado. Desde el tablero de la aplicación Empleados haga clic en el botón Nuevo,
+                    aparecerá un nuevo formulario de empleado. Complete la información necesaria y cualquier detalle
+                    adicional.
+                  </p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                  <img src="assets/img/Imagenes1/formuEmples.png" alt="Formulario_Empleados" class="anchoImagen">
+                </div>
+              </div>
+
+              <br/>
+
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <img src="assets/img/Imagenes1/organigrama.jpg" alt="Organigrama" class="anchoImagen">
+                </div>
                 <div class="col-sm-12 col-lg-6">
 
-                  <h2 style="text-align: left;" class="underlight">Modulo Empleados</h2>
-                  <p style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam expedita possimus ipsam a velit!
-                    Dolorum dolores quia deleniti fuga labore, nam dolorem consectetur similique perferendis voluptatem
-                    vitae aperiam possimus hic.
+                  <h2 class="underlight textoizq">C Modulo Empleados / Organigrama</h2>
+                  <p class="textoizq">
+                    Vista de jerarquía (Organigrama), Para ver los departamentos en vista de jerarquía, haga clic en el
+                    icono (jerarquía) en la esquina superior derecha. Los departamentos aparecen en formato de
+                    organigrama, en la parte superior aparecerá el departamento de mayor nivel (usualmente será la
+                    Gerencia) y todos los otros departamentos aparecerán abajo de este. Todos los departamentos
+                    secundarios del departamento principal estarán plegados. Cada tarjeta de departamento muestra el
+                    Nombre del departamento, el Gerente (y su imagen de perfil), el Número de empleados en el
+                    departamento y la posibilidad de expandir el departamento (Desplegar) si el departamento tiene
+                    departamentos secundarios.
                   </p>
                 </div>
 
-
               </div>
-
-
-
-
             </div>
           </div>
         </div>
@@ -140,14 +200,278 @@
     </div><!-- End Page Title -->
 
 
+    <!-- MODULO VENTAS PRODUCTOS -->
 
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container-fluid">
+
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h2 id="modulo2a" class="underlight textoTitulo">2.A Modulo Ventas Productos</h2>
+              <hr>
+              <div class="row">
+
+                <img src="assets/img/productos/crearProducto.jpg" alt="Crear Producto">
+                <p class="textoizq margenUno">
+                  Para crear un producto podemos hacerlo dirigiendonos al modulo Compra -> Productos
+                </p>
+
+                <div class="col-sm-12 col-lg-6">
+                  <img class="anchoImagen" src="assets/img/productos/formularionuevoProducto.jpg" alt="Empleados">
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                  <h2 id="modulo2b" class="underlight textoizq">2.B Formulario Nuevo producto</h2>
+                  <p class="textoizq">
+                    Aquí un ejemplo de crear un nuevo producto ponemos un nombre "Ordenador Gaming", seleccionamos el
+                    tipo de producto, Bien, Servicio, le asignamos un precio de venta y en el apartado de categorias
+                    podemos asignarle uno o crear una nueva seguido de esto ya podriamos almacenarlo en memoria
+                    clickando en el icono de nube al lado derecho de la tuerca de settings a la derecha del nombre del
+                    producto.
+                  </p>
+                </div>
+
+                <div style="margin-top: 30px;">
+                  <img src="assets/img/productos/productos1.jpg" alt="Crear Producto" class="anchoImagen">
+                  <p class="textoizq margenUno">
+                    Para crear un producto podemos hacerlo dirigiendonos al modulo Compra -> Productos
+                  </p>
+                </div>
+
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                  <h2 id="modulo2c" class="underlight textoizq">2.C Gestion de Productos</h2>
+                  <p class="textoizq">
+                    Odoo le permite crear, importar y gestionar las páginas de sus productos en la aplicación Sitio web.
+                    desde aquí se puede configurar mejorar cualquier tema concerniente con los productos las
+                    posibilidades son muchas y este un paso fundamental en el ejercicio diario del comercio.
+                    <br>
+                    Desde el diseño de la página de productos, las cantidades, impuestos, variantes, agregar crear, etc.
+                    <br>
+                    para mayor información la documentación oficial de este modulo en sel siguente enlace:
+                    <a target="_blank"
+                      href="https://www.odoo.com/documentation/16.0/es/applications/websites/ecommerce/managing_products/products.html">Gestión
+                      de Productos</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- FIN VENTAS PRODUCTOS -->
+
+    <!--3 MODULO COMPRA  -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container-fluid">
+
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h2 id="modulo3a" class="underlight textoTitulo">3.A. Modulo Compra</h2>
+              <hr>
+              <div style="margin-top: 30px;">
+                <img src="assets/img/compras/moduloCompra.jpg" alt="Crear Producto" class="anchoImagen">
+                <p class="textoizq margenUno">
+                  Pantalla Modulo Compras donde se puede ver el estado de Solicitudes, Pedidos estadisticas y demas
+                  información relacionada
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                  <p class="textoizq">
+                    El módulo de Compra le permite gestionar sus órdenes de compra, para el control de productos para
+                    recibir y controlar las facturas de los proveedores. Si quieres obtener las previsiones de productos
+                    y recepciones bajo control, lo primero que debe hacer es implementar el proceso de compra Odoo.
+                    Saber lo que han comprado en base de la previsión y el control de recepciones.
+                  </p>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <h2 id="modulo3b" class="underlight textoizq">
+                    3.B Solicitud de Presupuesto
+                  </h2>
+                  <p class="textoizq">
+                    Crear un nuevo empleado, Cuando contrata a un nuevo empleado, lo primero que debe hacer es crear un
+                    nuevo registro de empleado. Desde el tablero de la aplicación Empleados haga clic en el botón Nuevo,
+                    aparecerá un nuevo formulario de empleado. Complete la información necesaria y cualquier detalle
+                    adicional.
+                  </p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                  <img src="assets/img/compras/solicitudPedido.jpg" alt="Solicitud de Pedido" class="anchoImagen">
+                  <div class="textoizq">
+
+                    Ejemplo de Solicitud de Compra en la barra superior derecha se puede ver unas breadcrumbs del
+                    proceso de Solicitud de Presupuesto -> Pedido de Compra
+                  </div>
+                </div>
+              </div>
+
+              <br />
+              <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                  <img src="assets/img/compras/envioCorreos.jpg" alt="EnvioCorreos" class="anchoImagen">
+                  <div class="textoizq">
+                    <h2 id="modulo3c" class="underlight">3.C. Pedido Compra</h2>
+                    Ejemplo de venta de envio de Correo con un un Pedido de Compra
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                  <img src="assets/img/compras/correoPedido.jpg" alt="PedidoCompra" class="anchoImagen">
+                  <div class="textoizq">
+                    Ejemplo de Correo con un un Pedido de Compra
+                    este es el enlace a la documentación oficial <a target="_blank"
+                      href="https://www.odoo.com/documentation/15.0/es/applications/inventory_and_mrp/purchase.html">enlace</a>
+                    tambien esta el tutorial oficial por capitulos
+                    en este enlace <a href="https://www.odoo.com/es_ES/slides/purchase-23">enlace tutorial oficial
+                      Odoo</a>
+                    Para generar un pedido de compra hay que solicitar 1ero una solicitud de Presupuesto y luego de su
+                    aprobación ya se convierte en un Pedido de Compra, esta es la copia enviada por correo electrónico.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- FIN MODULO COMPRA -->
+
+    <!--4 MODULO LOGO  -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container-fluid">
+
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h2 id="modulo4a" class="underlight textoTitulo">4.A. Modulo LOGO</h2>
+              <hr>
+              <div style="margin-top: 30px;">
+                <img src="assets/img/Imagenes1/logoManual.jpg" alt="Logo Empresa" class="anchoImagen">
+                <p class="textoizq margenUno">
+                  Generalmente las elaboraciones de logotipos se han realizado con el fin de identificar una empresa
+                  desde lo comercial y relacionado con una identidad para este trabajo el loogo se ve refelejado en las
+                  comunicaciones y correos de la empresa por ende la función más importante es su capacidada de lectura
+                  enfrentando las dificultades del tamaño de este en los formatos de presentación por eso nos decantamos
+                  un logotipo de colores solido y letras de serif recto para su facil lectura y con una unciono de las
+                  letras de nuestros nombres y la palabra market de mercado en ingles nace FaMarkt
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container-fluid">
+
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-sm-12 col-lg-8">
+
+              <h2 id="modulo5a" class="underlight textoTitulo">4.A. Modulo Ventas</h2>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12">
+
+
+                  <div class="col-sm-12">
+                    <img src="assets/img/ventas/puntoventa1.jpg" alt="PuntosVenta" class="anchoImagen">
+                  </div>
+
+                  <div class="col-lg-12">
+                    <h2  class="underlight textoizq tituloNuevo">4.A. Modulo Ventas</h2>
+                    <p class="textoizq">
+                      El módulo de ventas de Odoo es perfecto para manejar los pedidos en un restaurante peruano. 
+                      Imagínate que un cliente pide una mesa y ordena un ceviche y un lomo saltado. 
+                      Primero, entras al módulo de ventas, creas un pedido y anotas lo que el cliente pidió. 
+                      Incluso puedes agregar detalles como si quiere ají extra o qué término de cocción prefiere para el lomo.
+
+                      Cuando llega el momento de pagar, usas el módulo de TPV. Ahí seleccionas el pedido, verificas que todo esté bien, 
+                      y eliges el método de pago. Si el cliente paga en efectivo, registras el monto, das el cambio y listo, ¡todo queda 
+                      registrado en el sistema! Así tienes un control fácil y rápido de tus pedidos y ventas, sin complicaciones. 
+                      ¡Y tu cliente se va feliz con su comida peruana favorita!
+                      <br>
+                      para un detalle mejor se puede ver la documentacion general en este enlace: <a
+                        href="https://www.odoo.com/es_ES/app/sales-features#part_7">Gestión de ordenes y contratos</a>
+                    </p>
+                  </div>
+
+                  <h2 id="modulo5b" class="underlight textoizq">4.B. Imagenes modulo Ventas
+                  </h2>
+                  <p class="textoizq">
+                    Desde el modulo de ventas tienes una conexión directa con el modulo de productos para poder crear editar y volver 
+                    rápidamente al modulo de ventas y completar la venta, en el siguiente carrousel mostramos unas capturas del modulo de ventas donde se puede apreciar
+                    el salon con las mesas, los productos, la pantalla de comnpra del TPV con los productos y simulación de tiquet con precio de compra y finalmente la simulación de una compra realizada con el ticket de compra con el logo del Restaurante.
+                    <br>
+                    El sistemas es super simple hasta parace de chiste, luego de elegir la mesa seleccionas los productos le das a pago, eliges el metodo efectivo, tarjeta registra el ingreso, confirmas y se crea el ticket.
+                  </p>
+                </div>
+        
+              </div>
+              <div class="row">
+                <div class="col-lg-12" style="align-items: center; display: flex;">
+                  
+                  <!-- SWIPER -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/productos/productosventas.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/productos/cuyasado.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/planomesastpv.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/haciendopedido.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="imgSwiper" src="assets/img/ventas/ticketcompra.jpg">
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                
+                </div>
+              </div>
+              <br />
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End Page Title -->
+
+    </div>
+    
   </main>
 
   <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">PhotoFolio</strong> <span>All Rights Reserved</span>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Manual Boostrap/Odoo F.A.</strong> <span>All Rights
+            Reserved</span>
         </p>
       </div>
       <div class="social-links d-flex justify-content-center">
@@ -157,11 +481,7 @@
         <a href=""><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
       </div>
     </div>
 
@@ -181,7 +501,12 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script src="assets/js/swiperInicia.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

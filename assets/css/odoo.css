@@ -1,0 +1,18 @@
+.underlight {
+    color: var(--accent-color);
+  }
+
+.textoTitulo{
+    font-size: 3em;
+}
+
+.anchoImagen{
+    width: 100%;
+}
+.textoizq{
+    text-align: left;
+}
+
+.margenUno{
+    margin: 15px 10px 30px 10px;
+}
